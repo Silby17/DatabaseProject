@@ -10,16 +10,14 @@ import java.sql.*;
 
 public class DBProject extends JFrame {
 
-
     public static Connection connect;
 
     public DBProject() {
-
     }
 
     //The main function that will start the running of the program
     public static void main(String[] args) {
-
+        //Creating of new JFrame
         JFrame frame = new JFrame();
         ReadConfig readConfigurationFile = new ReadConfig();
         DBConnectionInfo connectionInfo = readConfigurationFile.getConnectionInfoFromFile("config.txt");
