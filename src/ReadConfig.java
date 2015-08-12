@@ -28,7 +28,6 @@ public class ReadConfig {
         try{
             String sCurrentLine;
             br = new BufferedReader(new FileReader(fileName));
-
             while ((sCurrentLine = br.readLine()) != null){
                 if(counter == 1){
                     dbURL = sCurrentLine;
